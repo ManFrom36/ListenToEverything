@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sortByName"
+        android:title="@string/fm_byName"
+        />
+
+    <item
+        android:id="@+id/sortByDate"
+        android:title="@string/fm_byDate"
+        />
+    <item
+        android:id="@+id/sortByRating"
+        android:title="@string/fm_byRating"
+        />
+
+</menu>

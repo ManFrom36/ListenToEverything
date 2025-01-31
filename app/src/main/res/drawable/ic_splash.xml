@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/ic_launcher_background"/>
+    </item>
+
+    <item
+        android:width="106dp"
+        android:height="104dp"
+        android:drawable="@drawable/lp_scratch_svgrepo_com"
+        android:gravity="center"/>
+
+</layer-list>

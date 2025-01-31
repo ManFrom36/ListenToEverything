@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lte_gray"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/btnAll"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_tab_main"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/lte_text_blue"
+            android:textOff="@string/all"
+            android:textOn="@string/all" />
+
+        <ToggleButton
+            android:id="@+id/btnNotListen"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_tab_main"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/lte_text_blue"
+            android:textOff="@string/not_listen"
+            android:textOn="@string/not_listen" />
+
+        <ToggleButton
+            android:id="@+id/btnListen"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_tab_main"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/lte_text_blue"
+            android:textOff="@string/listen"
+            android:textOn="@string/listen" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/idLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lHeader"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@drawable/line" />
+
+    <ListView
+        android:id="@+id/listAlbums"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tvStat"
+        android:layout_below="@id/idLine"
+        android:layout_marginBottom="5dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvStat"
+        app:srcCompat="@drawable/line" />
+
+    <TextView
+        android:id="@+id/tvStat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llBottom"
+        android:layout_marginTop="5dp"
+        android:text="@string/statistics"
+        android:textAlignment="textEnd"
+        android:textColor="@color/lte_button_text" />
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ibAddAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple"
+            android:foreground="@drawable/baseline_add_24"
+            android:foregroundGravity="center" />
+
+        <Button
+            android:id="@+id/ibGetRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple"
+            android:foreground="@drawable/baseline_question_mark_24"
+            android:foregroundGravity="center" />
+
+        <Button
+            android:id="@+id/ibMenuSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple"
+            android:foreground="@drawable/baseline_sort_24"
+            android:foregroundGravity="center" />
+
+        <Button
+            android:id="@+id/ibMenuMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple"
+            android:foreground="@drawable/baseline_menu_24"
+            android:foregroundGravity="center" />
+
+    </LinearLayout>
+</RelativeLayout>

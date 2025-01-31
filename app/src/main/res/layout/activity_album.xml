@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lte_gray"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AlbumActivity">
+
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/activity_album_title"
+        android:textColor="@color/lte_text_blue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCaption"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:numStars="5"
+                android:stepSize=".5"
+                android:theme="@style/LTERatingBar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/album_listen_info"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/lbArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/artist"
+            android:textColor="@color/lte_text_blue" />
+
+        <EditText
+            android:id="@+id/edArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:autofillHints=""
+            android:background="@drawable/edit"
+            android:gravity="start|top"
+            android:inputType="text|textAutoComplete|textCapSentences"
+            android:labelFor="@id/lbArtist"
+            android:maxLength="200"
+            android:padding="7dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/year"
+            android:textColor="@color/lte_text_blue" />
+
+        <EditText
+            android:id="@+id/edYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:autofillHints=""
+            android:background="@drawable/edit"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="7dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/album_title"
+            android:textColor="@color/lte_text_blue" />
+
+        <EditText
+            android:id="@+id/edAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:autofillHints=""
+            android:background="@drawable/edit"
+            android:gravity="start|top"
+            android:inputType="text|textAutoComplete|textCapSentences"
+            android:maxLength="200"
+            android:padding="7dp" />
+
+        <Switch
+            android:id="@+id/swMultiEnter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_multi_enter"
+            android:textColor="@color/lte_text_blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llMain"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_frame"
+            android:text="@string/cancel"
+            android:textColor="@color/lte_text_blue" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_frame"
+            android:text="@string/create_album"
+            android:textColor="@color/lte_text_blue" />
+    </LinearLayout>
+
+</RelativeLayout>

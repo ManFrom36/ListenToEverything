@@ -1,0 +1,10 @@
+<resources>
+    <color name="lte_button_surface_selected">#7F91C5</color>
+    <color name="lte_button_text">#f7f2f2</color>
+    <color name="lte_gray">#676666</color>
+    <color name="lte_gray_light">#B1B0B0</color>
+    <color name="lte_pink">#FDEEE3</color>
+    <color name="lte_text_blue">#E8EEFF</color>
+    <color name="lte_blue">#B4C6F8</color>
+    <color name="lte_edit_background">#878484</color>
+</resources>
